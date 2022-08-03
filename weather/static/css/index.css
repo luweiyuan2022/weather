@@ -1,0 +1,44 @@
+
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+
+body{
+    background: url("../images/1.jpeg") no-repeat;
+    background-size:cover;
+
+}
+
+#box{
+        width: 380px;
+        margin: 0 auto;
+        padding-top: 70px;
+        font-family: 'Microsoft YaHei';
+        font-size: 14px;
+    }
+
+input{
+        width: 260px;
+        border: 1px solid #e2e2e2;
+        height: 30px;
+        float: left;
+        background-image: url(../images/search.png);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position:5px center;
+        padding:0 0 0 40px;
+    }
+
+#search{
+        width: 78px;
+        height: 32px;
+        float: right;
+        background: black;
+        color: white;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+    }

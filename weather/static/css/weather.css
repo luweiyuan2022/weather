@@ -1,0 +1,40 @@
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+
+body{
+    background: url("../images/1.jpeg") no-repeat;
+    background-size:cover;
+
+}
+
+.cname{
+    padding-top:35px;
+}
+
+.cname,.tem,.wea{
+    padding-left:45%;
+}
+
+.today{
+    margin-top:40px;
+    font-weight:bold;
+}
+
+.today,.future{
+    float:left;
+    padding-left:35%;
+    overflow:hidden;
+    font-size: 120%
+
+}
+
+.item{
+    float:left;
+    margin:15px 20px;
+
+}
+

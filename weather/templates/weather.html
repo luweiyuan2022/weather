@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ w_city }}天气预报 </title>
+    <link href="static/css/weather.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+    <div class="cname">
+        <h2>{{ w_city }}</h2>
+    </div>
+    <div class="tem">
+        <h2>{{ w_now['temperature'] }}</h2>
+    </div>
+    <div class="wea">
+        <h2>{{ w_now['info'] }}<br>{{ w_now['direct'] }}</h2>
+    </div>
+
+    {% for w_dict in w_list %}
+        {% if loop.index == 1 %}
+        <div class="today">
+            <div class="item">{{ w_dict['date'][5:] }}</div>
+            <div class="item">{{ w_dict['date'] | weeks }}</div>
+            <div class="item">{{ w_dict['weather'] }}<br>{{ w_dict['direct'] }}</div>
+            <div class="item">{{ w_dict['temperature'] }}</div>
+        </div>
+        {% else %}
+        <div class="future">
+            <div class="item">{{ w_dict['date'][5:] }}</div>
+            <div class="item">{{ w_dict['date'] | weeks }}</div>
+            <div class="item">{{ w_dict['weather'] }}<br>{{ w_dict['direct'] }}</div>
+            <div class="item">{{ w_dict['temperature'] }}</div>
+        </div>
+        {% endif %}
+    {% endfor %}
+
+</body>
+</html>
